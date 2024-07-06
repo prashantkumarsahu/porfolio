@@ -1,79 +1,70 @@
-/* Basic reset */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
-
-/* Container class for padding and centering content */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header styles */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #232f3e;
+    color: white;
     padding: 20px 0;
-}
-
-header h1 {
     text-align: center;
-    margin-bottom: 10px;
 }
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+header h1 {
+    margin: 0;
 }
-
-nav ul li {
-    margin: 0 15px;
+nav {
+    background-color: #3b4a5b;
+    overflow: hidden;
 }
-
-nav ul li a {
-    color: #fff;
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
     text-decoration: none;
-    font-weight: bold;
 }
-
-nav ul li a:hover {
-    text-decoration: underline;
+nav a:hover {
+    background-color: #575f6d;
 }
-
-/* Main content styles */
-main {
-    padding: 20px 0;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
-
-section {
-    margin-bottom: 40px;
-}
-
-section h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-section p {
-    font-size: 1.2em;
-    line-height: 1.6;
-}
-
-.responsive-img {
-    max-width: 100%;
-    height: auto;
+.main-content {
     margin-top: 20px;
 }
-
-/* Footer styles */
+.post {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.post h2 {
+    color: #232f3e;
+}
+.post p {
+    line-height: 1.6;
+}
+.post .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3b4a5b;
+    text-decoration: none;
+}
+.post .read-more:hover {
+    text-decoration: underline;
+}
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #232f3e;
+    color: white;
     text-align: center;
     padding: 10px 0;
-    margin-top: 40px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
