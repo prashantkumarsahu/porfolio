@@ -1,0 +1,9 @@
+a.new-tab-link {
+    text-decoration: none;
+    color: #007bff;
+    position: relative;
+  }
+a.new-tab-link .fa-arrow-right {
+    margin-left: 5px;
+    font-size: 0.8em;
+}
